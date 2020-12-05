@@ -1,0 +1,15 @@
+From chatterbot import ChatBot from chatterbot.trainers import ListTrainer class usuario:   def__init__(self,nome,idade, peso): 
+
+	self.nome=nome
+
+	self.idade=idade
+
+	self.peso=peso
+
+ chatbot = ChatBot('Carlos') 
+ trainer= ListTrainer(chatbot) trainer.train([ 'Olá', 'Como você vai?', 'Vou bem e você'.  'Qual o seu nome?'  ])
+ whileTrue: request = input("você:",) 
+  if request =="Fim":     
+    break;  
+  response= chatbot.get_response(request) 
+  print('Bot: ',response)
